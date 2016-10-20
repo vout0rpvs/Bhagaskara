@@ -1,0 +1,147 @@
+@font-face {
+  font-family: 'Existence Light';
+  src: url('../content/fonts/Existence-Light.ttf');
+}
+@font-face {
+  font-family: 'Lato Regular';
+  src: url('../content/fonts/Lato-Regular.ttf');
+}
+@font-face {
+  font-family: 'Lato Light';
+  src: url('../content/fonts/Lato-Light.ttf');
+}
+body{
+  max-width: 1900px;
+  width: 100%;
+}
+/*------------------------HEADER---------------------*/
+header{
+  background: url('../images/Bhagaskara.png');
+  height: 1050px;
+  background-position: -170px;
+  background-position-y:-36px;
+}
+header h1{
+  padding-top: 10%;
+  font-family: 'Existence Light';
+  font-size: 5em;
+  font-weight: 600;
+  color:#fff;
+}
+header h1 span{
+  color:#9f449b;
+}
+header h2{
+  font-family: 'Existence Light';
+  font-weight: 500;
+  padding-top: 60px;
+  color:#fff;
+  font-size: 3em;
+}
+header h3{
+  font-family: 'Existence Light';
+  font-weight: 500;
+  font-size: 1.5em;
+  color:#fff;
+}
+.shapes-wrapper{
+  font-family: 'Lato Regular';
+  font-weight: 600;
+  color:#fff;
+  margin-left: 33%;
+  margin-top: 8%;
+}
+.item-0{
+  position: relative;
+}
+.item-0 img:nth-child(2){
+  position: absolute;
+  top:40px;
+  left: 75px;
+}
+.item-0 span{
+    position: absolute;
+    top: 120px;
+    left: 75px;
+}
+.shapes-wrapper-bottom{
+  font-family: 'Lato Regular';
+  font-weight: 600;
+  color:#fff;
+}
+.item{
+  position: relative;
+}
+.item img:nth-child(2){
+  position: absolute;
+  top:40px;
+  left:72px;
+}
+.item span{
+  position: absolute;
+  top:120px;
+  left:81px;
+}
+.item-0 img:first-child:hover,.item img:first-child:hover{
+  background: url('../images/Shape2.png');
+  opacity: 1;
+  animation: fadeIn 0.2s linear;
+}
+@keyframes fadeIn {
+  0%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
+}
+.scroller{
+  margin-left:47%;
+}
+/*------------------------END-HEADER---------------------*/
+/*------------------------NAVIGATION---------------------*/
+.navigation{
+  height: 140px;
+  padding-top:50px;
+  font-family: 'Existence Light';
+  font-weight: 600;
+}
+.navigation p{
+  font-size: 2em;
+}
+.navigation p span{
+  color:#9f449b;
+}
+.navigation .container .col-md-8{
+  margin-top: 10px;
+}
+.navigation a{
+  font-family: 'Lato Light';
+  color:#000;
+  text-decoration: none;
+  outline: none;
+  margin-left: 5%;
+  padding-top:20px;
+}
+.navigation a:hover{
+  color:#9f449b;
+  text-decoration: none;
+}
+/*------------------------END NAVIGATION---------------------*/
+/*------------------------BHAGAINFO---------------------*/
+.bhagainfo{
+  background-color: #eeeeee;
+  height: 700px;
+}
+.img-above{
+  height: 190px;
+}
+
+
+/*------------------------END BHAGAINFO---------------------*/
+@media (max-width:420px){
+  .shapes-wrapper,.shapes-wrapper-bottom{
+    margin-left: inherit;
+    display: inline-flex;
+  }
+}

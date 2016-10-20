@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html ng-app='bhagaskaraApp'>
+  <head>
+    <meta charset="utf-8">
+    <title>Bhagaskara</title>
+    <link rel="stylesheet" href="content/style.css">
+    <link rel="stylesheet" href="content/bootstrap.min.css">
+    <script type="text/javascript" src='lib/script.js'>
+    </script>
+    <script type="text/javascript" src='lib/angular.min.js'></script>
+    <script type="text/javascript" src='lib/app.js'></script>
+  </head>
+  <body>
+  <header ng-include="'../views/header.html'">
+  </header>
+  <main>
+  <section class="navigation" ng-include="'../views/navigation.html'"></section>
+  <section class='bhagainfo'>
+    <div class="container">
+      <div class="col-md-3">
+        <div class="img-above" id='heart'>
+          <img src="../images/heart-grey.png" onmouseover="changeImage('../images/heart-pink.png')" alt="" />
+        </div>
+      </div>
+      <div class="col-md-3">
+
+      </div>
+      <div class="col-md-3">
+
+      </div>
+      <div class="col-md-4">
+
+      </div>
+    </div>
+  </section>
+  </main>
+  <footer></footer>
+  </body>
+</html>
