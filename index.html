@@ -5,35 +5,57 @@
     <title>Bhagaskara</title>
     <link rel="stylesheet" href="content/style.css">
     <link rel="stylesheet" href="content/bootstrap.min.css">
-    <script type="text/javascript" src='lib/script.js'>
-    </script>
+    <script type="text/javascript" src='lib/jquery-3.1.0.min.js'></script>
+    <script type="text/javascript" src='lib/script.js'></script>
     <script type="text/javascript" src='lib/angular.min.js'></script>
+    <script type="text/javascript" src='lib/angular-animate.js'></script>
     <script type="text/javascript" src='lib/app.js'></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.10.3/TweenMax.min.js"></script>
   </head>
-  <body>
-  <header ng-include="'../views/header.html'">
-  </header>
+  <body ng-controller='bhagaController'>
+  <header ng-include="'../views/header.html'"></header>
   <main>
   <section class="navigation" ng-include="'../views/navigation.html'"></section>
-  <section class='bhagainfo'>
+  <section class='bhagainfo' ng-include="'../views/bhagainfo.html'"></section>
+  <section class='about' ng-include="'../views/about.html'"></section>
+  <section class='study' ng-include="'../views/study.html'"></section>
+  <section class='our-team' ng-include="'../views/our-team.html'"></section>
+  <section class='our-skills' ng-include="'../views/our-skills.html'"></section>
+  <section class='service' ng-include="'../views/services.html'"></section>
+  <section class='fusce-slider' ng-include="'../views/quote-slider.html'"></section>
+  <section class='portfolio' ng-include="'../views/portfolio.html'"></section>
+  <section class='get-in-touch'>
     <div class="container">
-      <div class="col-md-3">
-        <div class="img-above" id='heart'>
-          <img src="../images/heart-grey.png" onmouseover="changeImage('../images/heart-pink.png')" alt="" />
+      <div class="get-in-touch-logo">
+        <h2>Get <span>in touch</span></h2>
+      </div>
+      <div class="row">
+        <div class="col-md-6">
+          <form class="" action="index.html" method="post">
+            <input type="text" name="name" placeholder="Your name">
+            <input type="email" name="email" placeholder="Your email">
+            <textarea name="name" rows="8" cols="40" placeholder="Your message"></textarea>
+            <button id='submit' type="submit" name="name" value="Send email">Send email</button>
+          </form>
         </div>
-      </div>
-      <div class="col-md-3">
-
-      </div>
-      <div class="col-md-3">
-
-      </div>
-      <div class="col-md-4">
-
+        <div class="col-md-6">
+          <p>
+            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros.
+             Nullam malesuada erat ut turpis. Suspendisse urna nibh, viverra non, semper suscipit, posuere a, pede.
+          </p>
+          <p class='address'>
+              1600 Pennsylvania Ave NW, Washington,
+              DC 20500, United States of America.
+          </p>
+          <p class='address'>M: (202) 456-1212</p>
+          <p class='address'>T: (202) 456-1111</p>
+        </div>
       </div>
     </div>
   </section>
   </main>
-  <footer></footer>
+  <footer>
+      <p class='text-center'>Bhagas<span>kara</span>.</p>
+  </footer>
   </body>
 </html>

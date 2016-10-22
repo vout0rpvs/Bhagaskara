@@ -1,0 +1,19 @@
+<div class="container">
+  <div class="our-portfolio">
+    <h2>Our <span>portfolio</span></h2>
+  </div>
+  <div class="row">
+    <a id='all'>ALL</a>
+    <a id='web'>WEB</a>
+    <a id='apps'>APPS</a>
+    <a id='icons'>ICONS</a>
+  </div>
+  <div class="wrapper-portfolio overflow">
+    <div class="col-md-4" ng-repeat='image in portfolio'>
+      <img ng-src="{{image.source}}" width="100%" height="360px" />
+      <h2 class="text-center">{{image.name}}</h2>
+      <p class='text-center'>{{image.apps+' '+image.icons+' '+image.web}}</p>
+    </div>
+  </div>
+  <button onclick="$('.wrapper-portfolio').toggleClass('overflow');">Watch more</button>
+</div>
