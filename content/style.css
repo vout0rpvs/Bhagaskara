@@ -29,9 +29,9 @@ body{
 /*------------------------HEADER---------------------*/
 header{
   background: url('../images/Bhagaskara.png');
-  height: 1050px;
   background-position: -170px;
   background-position-y:-36px;
+  padding-bottom: 5%;
 }
 header h1{
   padding-top: 10%;
@@ -111,6 +111,9 @@ header h3{
   cursor: pointer;
   margin-left:47%;
 }
+.scroller img:hover{
+  transition: translateX(30px);
+}
 /*------------------------END-HEADER---------------------*/
 /*------------------------NAVIGATION---------------------*/
 .navigation{
@@ -162,40 +165,36 @@ header h3{
   margin: auto;
 }
 .above{
-  width: 100%;
   height: 190px;
+  margin-left: 20%;
+}
+.image-0,.image-0:hover,.image-1,.image-1:hover,.image-2,.image-2:hover,.image-3,.image-3:hover{
+  background-position-x: 45px;
+  background-size: 70%;
 }
 .image-0{
   background: url('../images/heart-grey.png') no-repeat;
-  background-position-x: 45px;
 }
 .image-0:hover{
   background: url('../images/heart-pink.png') no-repeat;
-  background-position-x: 45px;
 }
 .image-1{
   background: url('../images/diamond.png') no-repeat;
-  background-position-x: 45px;
 }
 .image-1:hover{
   background: url('../images/diamond-pink.png') no-repeat;
-  background-position-x: 45px;
 }
 .image-2{
   background: url('../images/cup.png') no-repeat;
-  background-position-x: 45px;
 }
 .image-2:hover{
   background: url('../images/cup-pink.png') no-repeat;
-  background-position-x: 45px;
 }
 .image-3{
   background: url('../images/phone.png') no-repeat;
-  background-position-x: 45px;
 }
 .image-3:hover{
   background: url('../images/phone-pink.png') no-repeat;
-  background-position-x: 45px;
 }
 
 
@@ -643,6 +642,31 @@ footer span{
     margin-left: inherit;
     display: none;
   }
+  .service img{
+    margin-left: 35%;
+  }
+  .scroller{
+    margin:40%;
+  }
+  .mockup{
+    display: none;
+  }
+  .above{
+    display: none;
+  }
+  .bhagainfo .text-center {
+    padding: 0!important;
+    margin-bottom: 10%;
+  }
+  .avatar{
+    display: none;
+  }
+  .manipulators {
+    margin-left: 30%;
+  }
+  .smedia {
+    margin-left: 30%!important;
+  }
 }
 @media(max-width:768px){
   .portfolio .row a {
@@ -650,6 +674,15 @@ footer span{
   }
 }
 @media(max-width:995px){
+  .avatar {
+    margin-left: 34%;
+  }
+  .smedia {
+    margin-left: 39%;
+  }
+  .above{
+    margin-left: 30%!important;
+  }
   .item-0,.item{
     margin-left: 20px;
   }
@@ -685,5 +718,17 @@ footer span{
   }
   .get-in-touch .col-md-6:nth-child(2){
     margin-top: 10%;
+  }
+  .fusce-slider ul{
+    margin-left: 38%!important;
+  }
+}
+@media (max-width:1300px) and (min-width:768px) {
+  .above{
+    margin-left: 10%;
+  }
+  .fusce-slider ul{
+    margin-right: 17%;
+    margin-left: 43%;
   }
 }
