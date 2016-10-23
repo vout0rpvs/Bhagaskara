@@ -108,6 +108,7 @@ header h3{
   }
 }
 .scroller{
+  cursor: pointer;
   margin-left:47%;
 }
 /*------------------------END-HEADER---------------------*/
@@ -201,7 +202,6 @@ header h3{
 /*------------------------ABOUT---------------------*/
 
 .about{
-  height: 1000px;
   font-family: 'Lato Light';
 }
 .about-us{
@@ -279,7 +279,7 @@ background-position-y:-560px;
 /*------------------------OUR TEAM---------------------*/
 
 .our-team{
-height: 1120px;
+height: auto;
 }
 .our-team-logo{
   position: relative;
@@ -313,6 +313,20 @@ height: 1120px;
 }
 .slide{
   margin-top: 15%;
+}
+.slide.ng-enter{
+  opacity: 0;
+  transition: 0.5s linear all;
+}
+.slide.ng-enter.ng-enter-active{
+  opacity: 1;
+}
+.slide.ng-leave{
+  opacity: 1;
+  transition: 0.5s linear all;
+}
+.slide.ng-leave.ng-leave-active{
+  opacity: 0;
 }
 .slide h2{
   font-family: 'Lato Bold';
@@ -430,7 +444,7 @@ height: 1120px;
 /*------------------------END QUOTE SLIDER---------------------*/
 /*------------------------PORTFOLIO---------------------*/
 .portfolio{
-  height: 1500px;
+  height: auto;
 }
 .portfolio .container{
   background-color: #fff;
@@ -574,6 +588,15 @@ text-decoration: none;
 .address{
   font-family: 'Helvetica Neue Bold';
 }
+.socials{
+  margin-top: 10%;
+}
+.socials img{
+  margin-left: 5%;
+}
+.socials img:first-child{
+  margin-left: 0;
+}
 /*------------------------END GET IN TOUCH---------------------*/
 /*------------------------FOOTER---------------------*/
 footer p{
@@ -585,15 +608,26 @@ footer span{
     color:#9f449b;
   }
 }
+.hidden{
+     opacity:0;
+}
+.visible{
+     opacity:1;
+}
 /*------------------------END FOOTER---------------------*/
 /*----------------------------------MEDIA QUERIES--------------------------*/
-@media (max-width:420px){
+@media(max-width:600px){
   .shapes-wrapper,.shapes-wrapper-bottom{
     margin-left: inherit;
-    display: inline-flex;
+    display: none;
   }
 }
-@media (max-width:995px){
+@media(max-width:768px){
+  .portfolio .row a {
+    display: none;
+  }
+}
+@media(max-width:995px){
   .item-0,.item{
     margin-left: 20px;
   }
@@ -610,5 +644,24 @@ footer span{
   .bhagainfo .text-center{
     padding-top: 0;
     padding-left: 45px;
+  }
+  .wrapper-portfolio{
+    height: 480px;
+  }
+  .portfolio .row a:first-child {
+    margin-left: 25%;
+  }
+  .portfolio button{
+    margin-left: 25%;
+  }
+  .portfolio img{
+    height: auto;
+  }
+  .get-in-touch{
+    height: auto;
+    padding-bottom: 10%;
+  }
+  .get-in-touch .col-md-6:nth-child(2){
+    margin-top: 10%;
   }
 }
