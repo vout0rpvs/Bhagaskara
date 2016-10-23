@@ -63,8 +63,9 @@ header h3{
   margin-left: 33%;
   margin-top: 8%;
 }
-.item-0{
+.item-0,.item{
   position: relative;
+  cursor: pointer;
 }
 .item-0 img:nth-child(2){
   position: absolute;
@@ -80,9 +81,6 @@ header h3{
   font-family: 'Lato Regular';
   font-weight: 600;
   color:#fff;
-}
-.item{
-  position: relative;
 }
 .item img:nth-child(2){
   position: absolute;
@@ -636,6 +634,18 @@ footer span{
 ::-webkit-scrollbar-thumb:window-inactive {
 	background-color:#9b449f;
 }
+.ng-scope{
+  animation:fadeAway 0.5s linear all;
+  opacity: 1;
+}
+@keyframes fadeAway {
+  0%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
+}
 /*----------------------------------MEDIA QUERIES--------------------------*/
 @media(max-width:600px){
   .study img{
@@ -694,6 +704,7 @@ footer span{
   }
   .item-0,.item{
     margin-left: 20px;
+
   }
   .shapes-wrapper{
     margin-left: 0;
