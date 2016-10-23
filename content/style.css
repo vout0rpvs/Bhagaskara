@@ -638,6 +638,9 @@ footer span{
 }
 /*----------------------------------MEDIA QUERIES--------------------------*/
 @media(max-width:600px){
+  .study img{
+    margin-left: 32%;
+  }
   .shapes-wrapper,.shapes-wrapper-bottom{
     margin-left: inherit;
     display: none;
@@ -674,6 +677,12 @@ footer span{
   }
 }
 @media(max-width:995px){
+  .scroller{
+    margin-left:42%;
+  }
+  .study img{
+    margin-left: 35%;
+  }
   .avatar {
     margin-left: 34%;
   }
