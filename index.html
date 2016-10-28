@@ -7,30 +7,283 @@
     <link rel="stylesheet" href="content/style.css">
     <link rel="stylesheet" href="content/bootstrap.min.css">
     <link rel="stylesheet" href="content/animate.css">
-    <script type="text/javascript" src='lib/jquery-3.1.0.min.js'></script>
-    <script type="text/javascript" src='lib/script.js'></script>
-    <script type="text/javascript" src='lib/angular.min.js'></script>
-    <script type="text/javascript" src='lib/angular-scroll.min.js'></script>
-    <script type="text/javascript" src='lib/angular-animate.js'></script>
-    <script type="text/javascript" src='lib/app.js'></script>
-    <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.10.3/TweenMax.min.js"></script>
   </head>
   <body ng-controller='bhagaController'>
-  <header id='home' ng-include="'../views/header.html'" class=''></header>
+  <header id='home'>
+    <div class="container">
+      <h1 class="text-center">Bhagas<span>kara</span>.</h1>
+      <h2 class="text-center">Fusce rutrum pretium lorem semper nulla.</h2>
+      <h3 class="text-center">Vestibulum ornare cursus nisl, fermentum tincidunt libero pretium et. Maecenas interdum ligula non
+      fermentum fringilla.</h3>
+
+      <div class="row">
+        <div ng-click='gotoElement("services")' class="col-md-4 col-sm-12 col-xs-12 shapes-wrapper">
+          <div class="item-0 col-md-4 col-sm-4 col-xs-4">
+            <img src="../images/Headshape.png" alt="" />
+            <img src="../images/bubble.png" alt="" />
+            <span>Services</span>
+          </div>
+          <div ng-click='gotoElement("portfolio")' class="item-0 col-md-4 col-md-offset-2 col-sm-4 col-xs-4 col-xs-offset-3">
+            <img src="../images/Headshape.png" alt="" />
+            <img src="../images/photo.png" alt="" />
+            <span>Portfolio</span>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+          <div ng-click='gotoElement("about")' class="col-md-4 col-sm-12 col-xs-12 shapes-wrapper-bottom">
+            <div class="item col-md-4 col-sm-4 col-xs-4">
+              <img src="../images/Headshape.png" alt="" />
+              <img src="../images/settings.png" alt="" />
+              <span>About</span>
+            </div>
+            <div ng-click='gotoElement("team")' class="item col-md-4 col-md-offset-2 col-sm-4 col-xs-4 col-xs-offset-3">
+              <img src="../images/Headshape.png" alt="" />
+              <img src="../images/user.png" alt="" />
+              <span>Team</span>
+            </div>
+          </div>
+          <div ng-click='gotoElement("home")' class="col-md-4 col-md-offset-4 col-sm-12 col-xs-12 shapes-wrapper-bottom">
+            <div class="item col-md-4 col-sm-4 col-xs-4">
+              <img src="../images/Headshape.png" alt="" />
+              <img src="../images/pen.png" alt="" />
+              <span>Blog</span>
+            </div>
+            <div ng-click='gotoElement("contact")' class="item col-md-4 col-md-offset-2 col-sm-4 col-xs-4 col-xs-offset-3">
+              <img src="../images/Headshape.png" alt="" />
+              <img src="../images/paperplane.png" alt="" />
+              <span>Contact</span>
+            </div>
+          </div>
+      </div>
+      <div class="scroller">
+        <a ng-click='gotoElement("nav")'><img src="../images/scroller.png" alt="" /></a>
+
+      </div>
+    </div>
+  </header>
   <main>
-  <section id='nav' class="navigation" ng-include="'../views/navigation.html'"></section>
-  <section class='bhagainfo' ng-include="'../views/bhagainfo.html'"></section>
-  <section id='about' class='about' ng-include="'../views/about.html'"></section>
-  <section class='study' ng-include="'../views/study.html'"></section>
-  <section id='team' class='our-team' ng-include="'../views/our-team.html'"></section>
-  <section id='services' class='our-skills' ng-include="'../views/our-skills.html'"></section>
-  <section class='service' ng-include="'../views/services.html'"></section>
-  <section class='fusce-slider' ng-include="'../views/quote-slider.html'"></section>
-  <section id='portfolio' class='portfolio' ng-include="'../views/portfolio.html'"></section>
-  <section id='contact' class='get-in-touch' ng-include="'../views/get-in-touch.html'"></section>
+
+  <section class="navigation" id='nav'>
+    <div class="container">
+      <div class="col-md-4">
+        <p>Bhagas<span>kara</span></p>
+      </div>
+      <div class="col-md-8">
+        <a ng-click='gotoElement("home")'>HOME</a>
+        <a ng-click='gotoElement("about")'>ABOUT</a>
+        <a ng-click='gotoElement("team")'>TEAM</a>
+        <a ng-click='gotoElement("services")'>SERVICES</a>
+        <a ng-click='gotoElement("portfolio")'>PORTFOLIO</a>
+        <a ng-click='gotoElement("home")'>BLOG</a>
+        <a ng-click='gotoElement("contact")'>CONTACT</a>
+      </div>
+    </div>
+  </section>
+
+  <section class='bhagainfo'>
+    <div class="container">
+      <div class="col-md-3 col-sm-6 col-xs-6">
+        <div class="above image-0 "></div>
+        <div class='text-center'>
+          <h4>Build with love</h4>
+          <p>Fusce facilisis velit liberto, nec dignissim lacus sagittis non.
+            Sed nec porta ante. Pellentesque habitant morbi tristique senectus et</p>
+        </div>
+      </div>
+      <div class="col-md-3 col-sm-6 col-xs-6">
+        <div class="above image-1 "></div>
+        <div class='text-center'>
+          <h4>Clean and modern</h4>
+          <p>Fusce facilisis velit liberto, nec dignissim lacus sagittis non.
+            Sed nec porta ante. Pellentesque habitant morbi tristique senectus et</p>
+        </div>
+      </div>
+      <div class="col-md-3 col-sm-6 col-xs-6">
+        <div class="above image-2 "></div>
+        <div class='text-center'>
+          <h4>Easy to use</h4>
+          <p>Fusce facilisis velit liberto, nec dignissim lacus sagittis non.
+            Sed nec porta ante. Pellentesque habitant morbi tristique senectus et</p>
+        </div>
+      </div>
+      <div class="col-md-3 col-sm-6 col-xs-6">
+        <div class="above image-3 "></div>
+        <div class='text-center'>
+          <h4>Fully responsive</h4>
+          <p>Fusce facilisis velit liberto, nec dignissim lacus sagittis non.
+            Sed nec porta ante. Pellentesque habitant morbi tristique senectus et</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class='about' id='about' >
+    <div class='container'>
+      <div class='about-us'><h2 class='text-center'>About<span> us</span></h2></div>
+      <div class='row mock-learn'>
+        <div class='col-md-8 mockup'></div>
+        <div class='learn-mr col-md-4'>
+          <p>Quisque feugiat lorem elementum elit fringilla malesuada. Sed cursus scelerisque ex ut mollis. Nullam congue porta suscipit.
+            In non sem nunc. Mauris est mauris, tempus tincidunt eros ut, faucibus tristique urna.
+            Cras lobortis diam felis, quis vestibulum sapien varius eget. </p>
+            <button>Learn more</button>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class='study'>
+    <div class="container">
+        <img src="../images/study.png" alt="" />
+      <h2 class='text-center'>
+        We lorem and ipsum your aliquam
+      </h2>
+    </div>
+  </section>
+
+  <section class='our-team' id='team' >
+    <div class="container">
+      <div class="our-team-logo">
+        <h2>Our <span>team</span></h2>
+      </div>
+      <div class="manipulators">
+        <img ng-click="prevSlide()" src="../images/arrow-left.png" alt="" />
+        <img ng-click="nextSlide()" src="../images/arrow-right.png" alt="" />
+      </div>
+      <div class="row">
+        <div class="slide col-md-4 col-xs-12 show ng" ng-hide="!isCurrentIndex({{slide.index}})" ng-repeat='slide in slides'>
+          <div class="avatar">
+            <img ng-src='{{slide.src}}'/>
+          </div>
+          <h2 class='text-center'>{{slide.title}}</h2>
+          <p class='text-center'>{{slide.Job}}</p>
+          <div class="smedia">
+            <img src="../images/f.png" alt="" />
+            <img src="../images/g.png" alt="" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class='our-skills' id='services' >
+    <div class="container">
+      <div class="our-skills-logo">
+        <h2>Our <span>skills</span></h2>
+      </div>
+      <div class="col-md-6" ng-repeat="skill in skills">
+        <h2>{{skill.name}}<span>{{skill.knowledge}}</span></h2>
+        <img ng-src="{{skill.visual}}" width="100%" height="20px" />
+      </div>
+    </div>
+  </section>
+
+  <section class='service'>
+    <div class="container">
+      <div id='service-image'>
+        <img src="../images/Headshape.png" alt="" />
+        <img src="../images/bubble.png" alt="" />
+      </div>
+      <h2 class='text-center'>
+        Our services will lorem and ipsum your aliquam
+      </h2>
+    </div>
+  </section>
+
+  <section class='fusce-slider'>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3 col-sm-6" ng-repeat='number in numbers'>
+            <h2 class='text-center'>{{number.number}}</h2>
+            <p class='text-center'>{{number.subtext}}</p>
+        </div>
+      </div>
+      <div class="slider">
+         <div class="row">
+           <img ng-repeat="quote in quotes" class="slide-animation center-block"
+                ng-hide="!isSlideIndex($index)" ng-src="{{quote.image}}">
+           <h3 class="text-center col-md-8 col-md-offset-2" ng-repeat="quote in quotes" ng-hide="!isSlideIndex($index)">{{quote.quote}}</h3>
+         </div>
+         <p class='text-center col-md-8 col-md-offset-2' ng-repeat="quote in quotes" ng-hide="!isSlideIndex($index)">{{quote.by}}</p>
+         <nav class="nav">
+           <div class="wrapper">
+             <ul class="dots">
+              <li class="dot" ng-repeat="quote in quotes" ng-click="setSlideIndex($index);">
+                <img ng-hide="isSlideIndex($index)" ng-src="../images/Ellipse.png" alt="" />
+                <img src="../images/Ellipse_Active.png" ng-hide="!isSlideIndex($index)" alt="" />
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </div>
+  </section>
+
+  <section class='portfolio' id='portfolio' >
+    <div class="container">
+      <div class="our-portfolio">
+        <h2>Our <span>portfolio</span></h2>
+      </div>
+      <div class="row">
+        <a id='all'>ALL</a>
+        <a id='web'>WEB</a>
+        <a id='apps'>APPS</a>
+        <a id='icons'>ICONS</a>
+      </div>
+      <div class="wrapper-portfolio overflow">
+        <div class="col-md-4 col-xs-6" ng-repeat='image in portfolio'>
+          <img ng-src="{{image.source}}" width="100%" height="360px" />
+          <h2 class="text-center">{{image.name}}</h2>
+          <p class='text-center'>{{image.apps+' '+image.icons+' '+image.web}}</p>
+        </div>
+      </div>
+      <button onclick="$('.wrapper-portfolio').toggleClass('overflow');">Watch more</button>
+    </div>
+  </section>
+  <section class='get-in-touch' id='contact' >
+    <div class="container">
+      <div class="get-in-touch-logo">
+        <h2>Get <span>in touch</span></h2>
+      </div>
+      <div class="row">
+        <div class="col-md-6">
+          <form class="" action="index.html" method="post">
+            <input type="text" name="name" placeholder="Your name">
+            <input type="email" name="email" placeholder="Your email">
+            <textarea name="name" rows="8" cols="40" placeholder="Your message"></textarea>
+            <button id='submit' type="submit" name="name" value="Send email">Send email</button>
+          </form>
+        </div>
+        <div class="col-md-6">
+          <p>
+            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros.
+             Nullam malesuada erat ut turpis. Suspendisse urna nibh, viverra non, semper suscipit, posuere a, pede.
+          </p>
+          <p class='address'>
+              1600 Pennsylvania Ave NW, Washington,
+              DC 20500, United States of America.
+          </p>
+          <p class='address'>M: (202) 456-1212</p>
+          <p class='address'>T: (202) 456-1111</p>
+          <div class="socials">
+            <img src="../images/f1.png" alt="" width="75px" height="75px"/>
+            <img src="../images/t.png" alt="" width="75px" height="75px"/>
+            <img src="../images/g1.png" alt="" width="75px" height="75px"/>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
   </main>
   <footer>
       <p class='text-center'>Bhagas<span>kara</span>.</p>
   </footer>
+  <script type="text/javascript" src='lib/jquery-3.1.0.min.js'></script>
+  <script type="text/javascript" src='lib/script.js'></script>
+  <script type="text/javascript" src='lib/angular.min.js'></script>
+  <script type="text/javascript" src='lib/angular-scroll.min.js'></script>
+  <script type="text/javascript" src='lib/angular-animate.js'></script>
+  <script type="text/javascript" src='lib/app.js'></script>
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.10.3/TweenMax.min.js"></script>
   </body>
 </html>

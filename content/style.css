@@ -159,7 +159,7 @@ header h3{
 }
 .bhagainfo .text-center p{
   font-size: 1.1em;
-  width: 175px;
+  width: auto;
   margin: auto;
 }
 .above{
@@ -647,6 +647,16 @@ footer span{
   }
 }
 /*----------------------------------MEDIA QUERIES--------------------------*/
+@media (max-width:400px) {
+  .service img{
+    margin-left: 20%!important;
+  }
+}
+@media (max-width:480px) {
+  header h1{
+    font-size: 3em;
+  }
+}
 @media(max-width:600px){
   .study img{
     margin-left: 32%;
